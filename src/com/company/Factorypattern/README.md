@@ -43,7 +43,8 @@ but From the above class Transportaion  delivering of item  through Roadways wil
 delivery fuction using If else will be difficult to handle
 
 ### Solution 
-1 . to make the  single Responsiblity class create Two Separate Classes Roadwyas and waterWays
+1 . to make the  single Responsiblity class create Two Separate Classes Roadwyas and waterWays.
+
 2. now after  implementing different subclasses another Problem that comes is creating Object  so to create an Object User need to Know what are the subclasses  and allowing user to create object using new  keyword will not be maintainable as User cal create Object at any where in the application,so we need to keep object Creation Logic at one place so Created Transport Factory to keep  Object creation Logic at one Place and allowing user to  user Interface and Fatcory class to create an Object
 
 
