@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 public class Multition {
 
-    private static HashMap< DataBaseTypes,Multition> dbInstance;
+    private static HashMap< DataBaseTypes,Multition> dbInstance=new HashMap<>();
     private String jdbcConnection;
 
     public String getJdbcConnection() {
         return jdbcConnection;
     }
 
-    private Multition(String jdbcConnection) {
+    Multition(String jdbcConnection) {
         this.jdbcConnection = jdbcConnection;
     }
 
@@ -25,7 +25,8 @@ public class Multition {
 
 
         }
-        return dbInstance.get(dataBaseType);
+
+        return dbInstance.get(dataBaseType) ;
     }
 
 }
